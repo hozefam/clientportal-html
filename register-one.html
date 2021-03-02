@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDF</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="/dist/semantic.min.js"></script>
+    <style>
+        div.active.step {
+            background-color: #21BA45 !important;
+        }
+        div.active.step::after {
+            background-color: #21BA45 !important
+        }
+    </style>
+</head>
+<body class="bg-image">
+    <header>
+      <div class="ui stackable menu">
+          <div class="item">
+            <a href="index.html">
+             <img class="ui tiny image" src="/assets/logo.svg">
+            </a>
+          </div>
+          <div class="right menu">
+            <a class="item">Contact Us</a>
+            <a class="item">
+              <button class="ui green button">Sign In</button>
+            </a>
+          </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="ui hidden divider"></div>
+      <div class="ui middle aligned left aligned grid container">
+        <div class="ui segment basic compact">
+          <span class="ui green big text">SIDF Client Portal Registration</span>
+          <div class="ui divider"></div>
+          <span class="ui large text">Welcome to the SIDF Client Registration. <br/> Your journey to apply for a Project Finance Loan begins here.</span>
+          <div class="ui hidden divider"></div>
+          <div class="ui steps">
+            <div class="active step">
+              <i class="clipboard check icon"></i>
+              <div class="content">
+                <span class="ui medium text">Provide Registration <br/> details</span>
+              </div>
+            </div>
+            <div class="step">
+              <i class="tasks icon"></i>
+              <div class="content">
+                <span class="ui medium text">Provide general loan <br/> eligibility information</span>
+              </div>
+            </div>
+            <div class="step">
+              <i class="file alternate outline icon"></i>
+              <div class="content">
+                <span class="ui medium text">Provide detailed loan <br/> application information</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          
+          <div class="ui hidden divider"></div>
+          <a href="register-one.html" class="ui green button fluid" type="submit" style="margin-top: 5px;">Go to Registration</a>
+        </div>
+      </div>
+    </section>
+    <!-- <footer>
+      <div class="ui vertical footer segment">
+        Footer
+      </div>
+    </footer> -->
+</body>
+</html>

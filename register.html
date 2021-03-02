@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDF</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="/dist/semantic.min.js"></script>
+    <style>
+        div.active.step {
+            background-color: #21BA45 !important;
+        }
+        div.active.step::after {
+            background-color: #21BA45 !important
+        }
+    </style>
+</head>
+<body class="bg-image">
+    <header>
+      <div class="ui stackable menu">
+          <div class="item">
+            <a href="index.html">
+             <img class="ui tiny image" src="/assets/logo.svg">
+            </a>
+          </div>
+          <div class="right menu">
+            <a class="item">Contact Us</a>
+            <a class="item">
+              <button class="ui green button">Sign In</button>
+            </a>
+          </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="ui hidden divider"></div>
+      <div class="ui middle aligned left aligned grid container">
+        <div class="ui segment basic compact">
+          <span class="ui green big text">SIDF Client Portal Registration</span>
+          <div class="ui divider"></div>
+          <span class="ui large text">Welcome to the SIDF Client Registration. <br/> Your journey to apply for a Project Finance Loan begins here.</span>
+          <div class="ui hidden divider"></div>
+          <div class="ui steps">
+            <div class="active step">
+              <i class="clipboard check icon"></i>
+              <div class="content">
+                <span class="ui medium text">Provide Registration <br/> details</span>
+              </div>
+            </div>
+            <div class="step">
+              <i class="tasks icon"></i>
+              <div class="content">
+                <span class="ui medium text">Provide general loan <br/> eligibility information</span>
+              </div>
+            </div>
+            <div class="step">
+              <i class="file alternate outline icon"></i>
+              <div class="content">
+                <span class="ui medium text">Provide detailed loan <br/> application information</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- <div class="ui hidden divider"></div> -->
+          <span class="ui medium text">Please prepare the following information before you register</span>
+
+          <table class="ui celled table">
+            <tbody>
+              <tr>
+                <td class="left marked green">1</td>
+                <td class="left marked">The commercial registration number or SAGIA industrial license number of the company for which <br/> you are applying a loan.</td>
+              </tr>
+              <tr>
+                <td class="left marked green">2</td>
+                <td class="left marked">Your Personal identification information e.g. National ID, Resident ID. or scans of copies of your <br/>  GCC ID, or passport.</td>
+              </tr>
+              <tr>
+                <td class="left marked green">3</td>
+                <td class="left marked">In case you are an employee representing your company, please prepare a delegation of authority letter <br/> signed and stamped by the company owner / shareholder.</td>
+              </tr>
+              <tr>
+                <td class="left marked green">4</td>
+                <td class="left marked">In case you are an agent representing a company, please prepare a delegation of authority letter signed <br/> and stamped by the company owner / shareholder.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="ui hidden divider"></div>
+          <a href="register-one.html" class="ui green button fluid" type="submit" style="margin-top: 5px;">Go to Registration Details</a>
+        </div>
+      </div>
+    </section>
+    <!-- <footer>
+      <div class="ui vertical footer segment">
+        Footer
+      </div>
+    </footer> -->
+</body>
+</html>
