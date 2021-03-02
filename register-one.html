@@ -140,9 +140,11 @@
 
             $('.ui.radio.checkbox').click(function() {
                 if($('.ui.radio.checkbox').find(':checked').val() === "mci") {
-                    window.location.replace("/register-mci.html");
+                    window.location.href = "/register-mci.html";
+                    // window.location.replace("/register-mci.html");
                 } else {
-                    window.location.replace("/register-sagia.html");
+                    window.location.href = "/register-sagia.html";
+                    // window.location.replace("/register-sagia.html");
                 }
             })
         });
