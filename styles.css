@@ -26,3 +26,13 @@ body {
     width: 100%;
     z-index: -1;
   }
+
+  div.ui.yellow.compact.message {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  div.ui.yellow.compact.message div.header{
+    background-color: white !important;
+    color: black !important;
+  }
