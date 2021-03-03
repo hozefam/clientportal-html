@@ -170,14 +170,8 @@
     </section>
     <script>
         $(document).ready(function(){
-            $('.ui.radio.checkbox').checkbox();
-
-            $('.ui.radio.checkbox').click(function() {
-                if($('.ui.radio.checkbox').find(':checked').val() === "mci") {
-                    window.location.replace("/register-mci.html");
-                } else {
-                    window.location.replace("/register-sagia.html");
-                }
+            $('.ui.green.button').click(function() {
+                window.location.replace("/register-two.html");
             })
         });
     </script>

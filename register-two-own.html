@@ -66,10 +66,10 @@
 
             <div class="fourteen wide column" >
                 <div class="ui unstackable steps">
-                    <div class="active step">
+                    <div class="completed step">
                         <div class="description">Company Identification</div>
                     </div>
-                    <div class="step">
+                    <div class="active step">
                       <div class="content">
                         <div class="description">User Identification</div>
                       </div>
@@ -102,65 +102,69 @@
                 </div>
 
                 <div class="ui hidden divider"></div>
-                <span class="ui green large text">MISA / SAGIA business license number</span>
+                    <div class="ui breadcrumb">
+                        <div class="active section">Owner / Shareholder</div>
+                    </div>
+                <!-- <span class="ui green large text">Please provide your official identification details</span> -->
                 <div class="ui divider"></div>
                 
                 <div class="ui grid">
                     <div class="eight wide column">
-                        <form class="ui form">
-                            <div class="ten wide field">
-                              <label>MISA / SAGIA business license number</label>
-                              <div class="wide field">
-                                <input type="text" name="cr-number" placeholder="Eg. 7003016537">
+                        <div class="grouped fields">
+                            <label for="fruit">Select the client ID type to register yourself at SIDF</label>
+                            <br />
+                            <br />
+                            <div class="field">
+                              <div class="ui radio checkbox">
+                                <input type="radio" value="nid" name="optionCR" tabindex="0" class="hidden">
+                                <label>Saudi National ID</label>
                               </div>
                             </div>
-                            <div class="wide field">
-                                <label>License Issue Date</label>
-                                <div class="inline fields">
-                                    <div class="three wide field">
-                                      <div class="ui selection dropdown">
-                                            <input type="hidden" name="dd">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">DD</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="three wide field">
-                                        <div class="ui selection dropdown">
-                                            <input type="hidden" name="mm">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">MM</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="five wide field">
-                                        <div class="ui selection dropdown">
-                                            <input type="hidden" name="yy">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">YYYY</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </div>
+                            <br />
+                            <div class="field">
+                              <div class="ui radio checkbox">
+                                <input type="radio" value="iqama" name="optionCR" tabindex="0" class="hidden">
+                                <label>Iqama ID</label>
+                              </div>
+                            </div>
+                          <br />
+                            <div class="field">
+                              <div class="ui radio checkbox">
+                                <input type="radio" value="gcc" name="optionCR" tabindex="0" class="hidden">
+                                <label>GCC National ID</label>
+                              </div>
                             </div>
                             <br />
-                            <button class="ui green button" type="button">Next</button>
-                          </form>
+                            <div class="field">
+                              <div class="ui radio checkbox">
+                                <input type="radio" value="other" name="optionCR" tabindex="0" class="hidden">
+                                <label>Other nationality</label>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <div class="eight wide column">
-                        <span class="ui medium text">Enter the company MISA / SAGIA Business licence number issued by MISA/Sagia.</span>
                         <br />
                         <br />
-                        <span class="ui medium text">Your license number consists of 15-digits.</span>
+                        <span class="ui medium text">
+                            When you are a Saudi National, please select ‘Saudi National ID’.
+                        </span>
+                        <br />
+                        <br />
+                        <span class="ui medium text">
+                            When you are a registered resident of Saudi Arabia, please select ‘Iqama ID’.
+                        </span>
+                        <br />
+                        <br />
+                        <span class="ui medium text">
+                            When you are not not registered in Saudi Arabia, but a GCC national, please select ‘GCC national ID’.
+                        </span>
+                        <br />
+                        <br />
+                        <span class="ui medium text">
+                            If none of the above applies to your case, please select ‘Other nationality’.
+                        </span>
+                        <br />
                     </div>
                 </div>
 
@@ -170,8 +174,18 @@
     </section>
     <script>
         $(document).ready(function(){
-            $('.ui.green.button').click(function() {
-                window.location.replace("/register-two.html");
+            $('.ui.radio.checkbox').checkbox();
+
+            $('.ui.radio.checkbox').click(function() {
+                if($('.ui.radio.checkbox').find(':checked').val() === "nid") {
+                    window.location.href = "/register-two-own-nid.html";
+                } else if($('.ui.radio.checkbox').find(':checked').val() === "iqama") {
+                    window.location.href = "/register-two-own-iqama.html";
+                } else if($('.ui.radio.checkbox').find(':checked').val() === "gcc") {
+                    window.location.href = "/register-two-own-gcc.html";
+                } else {
+                    window.location.href = "/register-two-own-other.html";
+                }
             })
         });
     </script>

@@ -66,10 +66,10 @@
 
             <div class="fourteen wide column" >
                 <div class="ui unstackable steps">
-                    <div class="active step">
+                    <div class="completed step">
                         <div class="description">Company Identification</div>
                     </div>
-                    <div class="step">
+                    <div class="active step">
                       <div class="content">
                         <div class="description">User Identification</div>
                       </div>
@@ -102,65 +102,54 @@
                 </div>
 
                 <div class="ui hidden divider"></div>
-                <span class="ui green large text">MISA / SAGIA business license number</span>
+                <span class="ui green large text">Please provide your official identification details</span>
                 <div class="ui divider"></div>
                 
                 <div class="ui grid">
                     <div class="eight wide column">
-                        <form class="ui form">
-                            <div class="ten wide field">
-                              <label>MISA / SAGIA business license number</label>
-                              <div class="wide field">
-                                <input type="text" name="cr-number" placeholder="Eg. 7003016537">
+                        <div class="grouped fields">
+                            <label for="fruit">Select your relationship with the company</label>
+                            <br />
+                            <br />
+                            <div class="field">
+                              <div class="ui radio checkbox">
+                                <input type="radio" value="own" name="optionCR" tabindex="0" class="hidden">
+                                <label>Owner / Shareholder</label>
                               </div>
                             </div>
-                            <div class="wide field">
-                                <label>License Issue Date</label>
-                                <div class="inline fields">
-                                    <div class="three wide field">
-                                      <div class="ui selection dropdown">
-                                            <input type="hidden" name="dd">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">DD</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="three wide field">
-                                        <div class="ui selection dropdown">
-                                            <input type="hidden" name="mm">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">MM</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="five wide field">
-                                        <div class="ui selection dropdown">
-                                            <input type="hidden" name="yy">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">YYYY</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
                             <br />
-                            <button class="ui green button" type="button">Next</button>
-                          </form>
+                            <div class="field">
+                              <div class="ui radio checkbox">
+                                <input type="radio" value="emp" name="optionCR" tabindex="0" class="hidden">
+                                <label>Authorized employee</label>
+                              </div>
+                            </div>
+                          <br />
+                            <div class="field">
+                              <div class="ui radio checkbox">
+                                <input type="radio" value="agent" name="optionCR" tabindex="0" class="hidden">
+                                <label>Appointed Agent</label>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <div class="eight wide column">
-                        <span class="ui medium text">Enter the company MISA / SAGIA Business licence number issued by MISA/Sagia.</span>
                         <br />
                         <br />
-                        <span class="ui medium text">Your license number consists of 15-digits.</span>
+                        <span class="ui medium text">
+                            Select ‘owner / shareholder’ if you are a registered shareholder at the Ministry of Commerce.
+                        </span>
+                        <br />
+                        <br />
+                        <span class="ui medium text">
+                            Select ‘authorized employee’ if you are authorized by your company to apply for a loan.
+                        </span>
+                        <br />
+                        <br />
+                        <span class="ui medium text">
+                            Select ‘appointed agent’ if you are applying for a loan on behalf of a company that appointed you.
+                        </span>
+                        <br />
                     </div>
                 </div>
 
@@ -170,8 +159,16 @@
     </section>
     <script>
         $(document).ready(function(){
-            $('.ui.green.button').click(function() {
-                window.location.replace("/register-two.html");
+            $('.ui.radio.checkbox').checkbox();
+
+            $('.ui.radio.checkbox').click(function() {
+                if($('.ui.radio.checkbox').find(':checked').val() === "own") {
+                    window.location.href = "/register-two-own.html";
+                } else if($('.ui.radio.checkbox').find(':checked').val() === "emp") {
+                    window.location.href = "/register-two-emp.html";
+                } else {
+                    window.location.href = "/register-two-agent.html";
+                }
             })
         });
     </script>
