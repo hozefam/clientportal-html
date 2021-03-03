@@ -103,75 +103,83 @@
 
                 <div class="ui hidden divider"></div>
                     <div class="ui breadcrumb">
-                        <div class="active section">Owner / Shareholder</div>
+                        <a class="section" href="register-two-own.html">Authorized Employee</a>
+                        <div class="divider"> - </div>
+                        <div class="active section">GCC National ID</div>
                     </div>
                 <!-- <span class="ui green large text">Please provide your official identification details</span> -->
                 <div class="ui divider"></div>
                 
                 <div class="ui grid">
                     <div class="eight wide column">
-                        <div class="grouped fields">
-                            <label for="fruit">Select the client ID type to register yourself at SIDF</label>
-                            <br />
-                            <br />
-                            <div class="field">
-                              <div class="ui radio checkbox">
-                                <input type="radio" value="nid" name="optionCR" tabindex="0" class="hidden">
-                                <label>Saudi National ID</label>
+                        <form class="ui form">
+                            <div class="ten wide field">
+                              <label>Enter your GCC National ID</label>
+                              <div class="wide field">
+                                <input type="text" name="cr-number" placeholder="Eg. 9790140130">
                               </div>
                             </div>
+                            <div class="field">
+                                <label>ِAttach a copy of your GCC ID</label>
+                                <div class="ui action input">
+                                    <input type="text" value="" placeholder="No File Chosen">
+                                    <button class="ui green left labeled icon button">
+                                      <i class="file icon"></i>
+                                      Choose File
+                                    </button>
+                                  </div>
+                            </div>
+                            <div class="field">
+                                <label>ِAttach a photo of yourself holding the GCC ID</label>
+                                <div class="ui action input">
+                                    <input type="text" value="" placeholder="No File Chosen">
+                                    <button class="ui green left labeled icon button">
+                                      <i class="file icon"></i>
+                                      Choose File
+                                    </button>
+                                  </div>
+                            </div>
+                            <div class="field">
+                                <label>ِAttach your letter of authority</label>
+                                <div class="ui action input">
+                                    <input type="text" value="" placeholder="No File Chosen">
+                                    <button class="ui green left labeled icon button">
+                                      <i class="file icon"></i>
+                                      Choose File
+                                    </button>
+                                  </div>
+                            </div>
                             <br />
-                            <div class="field">
-                              <div class="ui radio checkbox">
-                                <input type="radio" value="iqama" name="optionCR" tabindex="0" class="hidden">
-                                <label>Iqama ID</label>
-                              </div>
-                            </div>
-                          <br />
-                            <div class="field">
-                              <div class="ui radio checkbox">
-                                <input type="radio" value="gcc" name="optionCR" tabindex="0" class="hidden">
-                                <label>GCC National ID</label>
-                              </div>
-                            </div>
-                            <br />
-                            <div class="field">
-                              <div class="ui radio checkbox">
-                                <input type="radio" value="other" name="optionCR" tabindex="0" class="hidden">
-                                <label>Other nationality</label>
-                              </div>
-                            </div>
-                          </div>
-
-                          
-                          <br />
-
-                          <br />
-
-                          <button id="previous" class="ui green button basic" type="button">Previous</button>
-
+                            <button id="previous" class="ui green button basic" type="button">Previous</button>
+                            <button id="next" class="ui green button" type="button">Next</button>
+                          </form>
                     </div>
                     <div class="eight wide column">
                         <br />
                         <br />
                         <span class="ui medium text">
-                            When you are a Saudi National, please select ‘Saudi National ID’.
+                            You find your GCC National ID number on your national ID card.
                         </span>
+                        <br />
                         <br />
                         <br />
                         <span class="ui medium text">
-                            When you are a registered resident of Saudi Arabia, please select ‘Iqama ID’.
+                            Attach a clear copy of the front page of your personal ID card.
                         </span>
+                        <br />
+                        <br />
                         <br />
                         <br />
                         <span class="ui medium text">
-                            When you are not not registered in Saudi Arabia, but a GCC national, please select ‘GCC national ID’.
+                            Make sure both your face and ID card are clear on the photo — nothing of the ID card can be covered or censored.
                         </span>
+                        <br />
                         <br />
                         <br />
                         <span class="ui medium text">
-                            If none of the above applies to your case, please select ‘Other nationality’.
+                            Attach a letter of authority signed and stamped by the company owner / shareholder.
                         </span>
+                        <br />
                         <br />
                     </div>
                 </div>
@@ -182,22 +190,12 @@
     </section>
     <script>
         $(document).ready(function(){
-            $('.ui.radio.checkbox').checkbox();
-
-            $('.ui.radio.checkbox').click(function() {
-                if($('.ui.radio.checkbox').find(':checked').val() === "nid") {
-                    window.location.href = "/register-two-own-nid.html";
-                } else if($('.ui.radio.checkbox').find(':checked').val() === "iqama") {
-                    window.location.href = "/register-two-own-iqama.html";
-                } else if($('.ui.radio.checkbox').find(':checked').val() === "gcc") {
-                    window.location.href = "/register-two-own-gcc.html";
-                } else {
-                    window.location.href = "/register-two-own-other.html";
-                }
+            $('#next').click(function() {
+                window.location.href = "/register-three.html";
             })
 
             $('#previous').click(function() {
-                window.location.href = "/register-two.html";
+                window.location.href = "/register-two-emp.html";
             })
         });
     </script>

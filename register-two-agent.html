@@ -103,7 +103,7 @@
 
                 <div class="ui hidden divider"></div>
                     <div class="ui breadcrumb">
-                        <div class="active section">Owner / Shareholder</div>
+                        <div class="active section">Appointed Agent</div>
                     </div>
                 <!-- <span class="ui green large text">Please provide your official identification details</span> -->
                 <div class="ui divider"></div>
@@ -135,15 +135,8 @@
                               </div>
                             </div>
                             <br />
-                            <div class="field">
-                              <div class="ui radio checkbox">
-                                <input type="radio" value="other" name="optionCR" tabindex="0" class="hidden">
-                                <label>Other nationality</label>
-                              </div>
-                            </div>
                           </div>
 
-                          
                           <br />
 
                           <br />
@@ -169,10 +162,6 @@
                         </span>
                         <br />
                         <br />
-                        <span class="ui medium text">
-                            If none of the above applies to your case, please select ‘Other nationality’.
-                        </span>
-                        <br />
                     </div>
                 </div>
 
@@ -186,11 +175,11 @@
 
             $('.ui.radio.checkbox').click(function() {
                 if($('.ui.radio.checkbox').find(':checked').val() === "nid") {
-                    window.location.href = "/register-two-own-nid.html";
+                    window.location.href = "/register-two-agent-nid.html";
                 } else if($('.ui.radio.checkbox').find(':checked').val() === "iqama") {
-                    window.location.href = "/register-two-own-iqama.html";
+                    window.location.href = "/register-two-agent-iqama.html";
                 } else if($('.ui.radio.checkbox').find(':checked').val() === "gcc") {
-                    window.location.href = "/register-two-own-gcc.html";
+                    window.location.href = "/register-two-agent-gcc.html";
                 } else {
                     window.location.href = "/register-two-own-other.html";
                 }
