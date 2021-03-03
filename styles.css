@@ -13,3 +13,16 @@ body {
     position: relative;
   }
   
+  input[readonly] {
+    background-color: lightgray !important;
+  }
+
+  #confetti{
+    background: white;
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+  }

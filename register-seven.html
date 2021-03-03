@@ -74,93 +74,76 @@
                         <div class="description">User Identification</div>
                       </div>
                     </div>
-                    <div class="active step">
+                    <div class="completed step">
                       <div class="content">
                         <div class="description">Personal Data</div>
                       </div>
                     </div>
-                    <div class="step">
+                    <div class="completed step">
                         <div class="content">
                             <div class="description">Address</div>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="completed step">
                         <div class="content">
                             <div class="description">Contact</div>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="completed step">
                         <div class="content">
                             <div class="description">Verification</div>
                         </div>
                     </div>
-                    <div class="step">
-                        <div class="content">
+                    <div class=" active step">
+                        <div class=" content">
                             <div class="description">Password</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="ui hidden divider"></div>
-                <span class="ui green large text">Please provide your personal details</span>
+                <span class="ui green large text">Please set your password</span>
                 <div class="ui divider"></div>
                 
                 <div class="ui grid">
-                    <div class=" wide column">
+                    <div class="eight wide column">
                         <form class="ui form">
-                            <div class="field">
-                              <label>Title</label>
-                              <div class="two wide field">
-                                <div class="ui selection dropdown">
-                                    <input type="hidden" name="dd">
-                                    <i class="dropdown icon"></i>
-                                    <div class="default text">Eg. Mr</div>
-                                    <div class="menu">
-                                        <div class="item" data-value="1">Male</div>
-                                        <div class="item" data-value="0">Female</div>
-                                    </div>
-                                </div>
-                            </div>
-
                                 <div class="fields">
                                     <div class="field">
-                                      <label>First name (Arabic)</label>
-                                      <input type="text" readonly="" value="Eg. اسم">
-                                    </div>
-                                    <div class="field">
-                                      <label>Middle name (Arabic)</label>
-                                      <input type="text" readonly="" value="Eg. اسم">
-                                    </div>
-                                    <div class="field">
-                                      <label>Last name (Arabic)</label>
-                                      <input type="text" readonly="" value="Eg. اسم">
+                                      <label>Select a sign in password</label>
+                                      <div class="ui input">
+                                      <input type="text" placeholder="Eg. qwerttyu12!@"></div>
                                     </div>
                                   </div>
-
                                   <div class="fields">
                                     <div class="field">
-                                      <label>First name (English)</label>
-                                      <input type="text" placeholder="Eg. Name">
-                                    </div>
-                                    <div class="field">
-                                      <label>Middle name (English)</label>
-                                      <input type="text" placeholder="Eg. Name">
-                                    </div>
-                                    <div class="field">
-                                      <label>Last name (English)</label>
-                                      <input type="text" placeholder="Eg. Name">
+                                      <label>Re-enter the sign in password</label>
+                                      <div class="ui input">
+                                      <input type="text" placeholder="Eg. qwerttyu12!@"></div>
                                     </div>
                                   </div>
-                            </div>
-                            <div class="wide field">
-                               
-                            </div>
+                            <br />
                             <br />
                             <button id="previous" class="ui green button basic" type="button">Previous</button>
-                            <button id="next" class="ui green button" type="button">Next</button>
+                            <button id="next" class="ui green button" type="button">Register</button>
                           </form>
                     </div>
-                    
+                    <div class="eight wide column">
+                        <br />
+                        <br />
+                        <span class="ui medium text">
+                            Your Password must:
+                        </span>
+                        <div class="ui bulleted list">
+                            <div class="item">Be at least 8 characters long</div>
+                            <div class="item">Contain no spaces</div>
+                            <div class="item">Contain 3 of the following: uppercase, lowercase,
+                                numerals, special characters (#,$,%, etc.)</div>
+                          </div>
+                        <br />
+                        <br />
+                        
+                    </div>
                 </div>
 
             </div>
@@ -170,11 +153,11 @@
     <script>
         $(document).ready(function(){
             $('#next').click(function() {
-                window.location.href = "/register-four.html";
+                window.location.href = "/final.html";
             })
 
             $('#previous').click(function() {
-                window.location.href = "/register-two.html";
+                window.location.href = "/register-six-mobile.html";
             })
         });
     </script>

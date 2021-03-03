@@ -74,12 +74,12 @@
                         <div class="description">User Identification</div>
                       </div>
                     </div>
-                    <div class="active step">
+                    <div class="completed step">
                       <div class="content">
                         <div class="description">Personal Data</div>
                       </div>
                     </div>
-                    <div class="step">
+                    <div class="active step">
                         <div class="content">
                             <div class="description">Address</div>
                         </div>
@@ -102,59 +102,60 @@
                 </div>
 
                 <div class="ui hidden divider"></div>
-                <span class="ui green large text">Please provide your personal details</span>
+                <span class="ui green large text">Please provide your personal address details</span>
                 <div class="ui divider"></div>
                 
                 <div class="ui grid">
                     <div class=" wide column">
                         <form class="ui form">
-                            <div class="field">
-                              <label>Title</label>
-                              <div class="two wide field">
-                                <div class="ui selection dropdown">
-                                    <input type="hidden" name="dd">
-                                    <i class="dropdown icon"></i>
-                                    <div class="default text">Eg. Mr</div>
-                                    <div class="menu">
-                                        <div class="item" data-value="1">Male</div>
-                                        <div class="item" data-value="0">Female</div>
-                                    </div>
-                                </div>
-                            </div>
-
                                 <div class="fields">
                                     <div class="field">
-                                      <label>First name (Arabic)</label>
-                                      <input type="text" readonly="" value="Eg. اسم">
+                                      <label>Country</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. Saudi Arabia"></div>
                                     </div>
                                     <div class="field">
-                                      <label>Middle name (Arabic)</label>
-                                      <input type="text" readonly="" value="Eg. اسم">
+                                      <label>City</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. Riyadh"></div>
                                     </div>
                                     <div class="field">
-                                      <label>Last name (Arabic)</label>
-                                      <input type="text" readonly="" value="Eg. اسم">
+                                      <label>Street</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. Jarir"></div>
                                     </div>
                                   </div>
 
                                   <div class="fields">
                                     <div class="field">
-                                      <label>First name (English)</label>
-                                      <input type="text" placeholder="Eg. Name">
+                                      <label>Zip Code</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. 10110"></div>
                                     </div>
                                     <div class="field">
-                                      <label>Middle name (English)</label>
-                                      <input type="text" placeholder="Eg. Name">
+                                      <label>Building Number</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. 8888"></div>
                                     </div>
                                     <div class="field">
-                                      <label>Last name (English)</label>
-                                      <input type="text" placeholder="Eg. Name">
+                                      <label>Optional: Neighborhood</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. Malaz"></div>
                                     </div>
                                   </div>
-                            </div>
-                            <div class="wide field">
-                               
-                            </div>
+                            
+                                  <div class="fields">
+                                    <div class="field">
+                                      <label>Unit Number</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. 3"></div>
+                                    </div>
+                                    <div class="field">
+                                      <label>Optional: Additional Number</label>
+                                      <div class="ui input">
+                                      <input type="text" readonly="" value="Eg. 123212"></div>
+                                    </div>
+                                  </div>
                             <br />
                             <button id="previous" class="ui green button basic" type="button">Previous</button>
                             <button id="next" class="ui green button" type="button">Next</button>
@@ -170,11 +171,11 @@
     <script>
         $(document).ready(function(){
             $('#next').click(function() {
-                window.location.href = "/register-four.html";
+                window.location.href = "/register-five.html";
             })
 
             $('#previous').click(function() {
-                window.location.href = "/register-two.html";
+                window.location.href = "/register-three.html";
             })
         });
     </script>
