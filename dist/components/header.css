@@ -455,13 +455,13 @@ a.ui.inverted.olive.header.header.header:hover {
   border-bottom: 2px solid #D9E778;
 }
 .ui.green.header {
-  color: #21BA45;
+  color: #41ad4f;
 }
 a.ui.green.header:hover {
-  color: #16ab39;
+  color: #359f43;
 }
 .ui.green.dividing.header {
-  border-bottom: 2px solid #21BA45;
+  border-bottom: 2px solid #41ad4f;
 }
 .ui.inverted.green.header.header.header {
   color: #2ECC40;

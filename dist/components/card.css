@@ -706,14 +706,14 @@ a.ui.card:hover,
 .ui.green.cards > .card,
 .ui.cards > .green.card,
 .ui.green.card {
-  -webkit-box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #21BA45, 0 1px 3px 0 #D4D4D5;
-          box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #21BA45, 0 1px 3px 0 #D4D4D5;
+  -webkit-box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #41ad4f, 0 1px 3px 0 #D4D4D5;
+          box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #41ad4f, 0 1px 3px 0 #D4D4D5;
 }
 .ui.green.cards > .card:hover,
 .ui.cards > .green.card:hover,
 .ui.green.card:hover {
-  -webkit-box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #16ab39, 0 1px 3px 0 #BCBDBD;
-          box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #16ab39, 0 1px 3px 0 #BCBDBD;
+  -webkit-box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #359f43, 0 1px 3px 0 #BCBDBD;
+          box-shadow: 0 0 0 1px #D4D4D5, 0 2px 0 0 #359f43, 0 1px 3px 0 #BCBDBD;
 }
 .ui.inverted.green.cards > .card,
 .ui.inverted.cards > .green.card,

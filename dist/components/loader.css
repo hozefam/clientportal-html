@@ -424,7 +424,7 @@
 .ui.green.loading.loading.loading.loading .input > i.icon:after,
 .ui.green.loading.loading.loading.loading > i.icon:after,
 .ui.green.loader.loader.loader:after {
-  color: #21BA45;
+  color: #41ad4f;
 }
 .ui.inverted.green.elastic.loader:before,
 .ui.inverted.green.elastic.loading.loading.loading:not(.segment):before,

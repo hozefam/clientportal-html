@@ -330,12 +330,12 @@
             box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #D9E778 inset;
   }
   .ui.ui.ui.ui.table:not(.unstackable) tr.marked.green.left {
-    -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #21BA45 inset;
-            box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #21BA45 inset;
+    -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #41ad4f inset;
+            box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #41ad4f inset;
   }
   .ui.ui.ui.ui.table:not(.unstackable) tr.marked.green.right {
-    -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #21BA45 inset;
-            box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #21BA45 inset;
+    -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #41ad4f inset;
+            box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #41ad4f inset;
   }
   .ui.ui.ui.ui.inverted.table:not(.unstackable) tr.marked.green.left {
     -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #2ECC40 inset;
@@ -821,12 +821,12 @@
           box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #D9E778 inset;
 }
 .ui.ui.ui.ui[class*="tablet stackable"].table tr.marked.green.left {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #21BA45 inset;
-          box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #21BA45 inset;
+  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #41ad4f inset;
+          box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #41ad4f inset;
 }
 .ui.ui.ui.ui[class*="tablet stackable"].table tr.marked.green.right {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #21BA45 inset;
-          box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #21BA45 inset;
+  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #41ad4f inset;
+          box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, -0.2em 0 0 0 #41ad4f inset;
 }
 .ui.ui.ui.ui[class*="tablet stackable"].inverted.table tr.marked.green.left {
   -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0.2em 0 0 0 #2ECC40 inset;
@@ -1397,10 +1397,10 @@
           box-shadow: -0.2em 0 0 0 #D9E778 inset;
 }
 .ui.green.table {
-  border-top: 0.2em solid #21BA45;
+  border-top: 0.2em solid #41ad4f;
 }
 .ui.inverted.green.table {
-  background-color: #21BA45;
+  background-color: #41ad4f;
   color: #FFFFFF;
 }
 .ui.ui.ui.ui.table tr.green:not(.marked),
@@ -1416,13 +1416,13 @@
 }
 .ui.table td.marked.green.left,
 .ui.table tr.marked.green.left {
-  -webkit-box-shadow: 0.2em 0 0 0 #21BA45 inset;
-          box-shadow: 0.2em 0 0 0 #21BA45 inset;
+  -webkit-box-shadow: 0.2em 0 0 0 #41ad4f inset;
+          box-shadow: 0.2em 0 0 0 #41ad4f inset;
 }
 .ui.table td.marked.green.right,
 .ui.table tr.marked.green.right {
-  -webkit-box-shadow: -0.2em 0 0 0 #21BA45 inset;
-          box-shadow: -0.2em 0 0 0 #21BA45 inset;
+  -webkit-box-shadow: -0.2em 0 0 0 #41ad4f inset;
+          box-shadow: -0.2em 0 0 0 #41ad4f inset;
 }
 .ui.inverted.table td.marked.green.left,
 .ui.inverted.table tr.marked.green.left {
