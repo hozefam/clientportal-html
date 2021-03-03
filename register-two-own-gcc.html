@@ -105,7 +105,7 @@
                     <div class="ui breadcrumb">
                         <a class="section" href="register-two-own.html">Owner / Shareholder</a>
                         <div class="divider"> - </div>
-                        <div class="active section">Saudi National ID</div>
+                        <div class="active section">GCC National ID</div>
                     </div>
                 <!-- <span class="ui green large text">Please provide your official identification details</span> -->
                 <div class="ui divider"></div>
@@ -114,47 +114,29 @@
                     <div class="eight wide column">
                         <form class="ui form">
                             <div class="ten wide field">
-                              <label>National ID number</label>
+                              <label>Enter your GCC National ID</label>
                               <div class="wide field">
-                                <input type="text" name="cr-number" placeholder="Eg. 7003016537">
+                                <input type="text" name="cr-number" placeholder="Eg. 9790140130">
                               </div>
                             </div>
-                            <div class="wide field">
-                                <label>Date of Birth</label>
-                                <div class="inline fields">
-                                    <div class="three wide field">
-                                      <div class="ui selection dropdown">
-                                            <input type="hidden" name="dd">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">DD</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="three wide field">
-                                        <div class="ui selection dropdown">
-                                            <input type="hidden" name="mm">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">MM</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="five wide field">
-                                        <div class="ui selection dropdown">
-                                            <input type="hidden" name="yy">
-                                            <i class="dropdown icon"></i>
-                                            <div class="default text">YYYY</div>
-                                            <div class="menu">
-                                                <div class="item" data-value="1">Male</div>
-                                                <div class="item" data-value="0">Female</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="field">
+                                <label>ِAttach a copy of your GCC ID</label>
+                                <div class="ui action input">
+                                    <input type="text" value="" placeholder="No File Chosen">
+                                    <button class="ui green left labeled icon button">
+                                      <i class="file icon"></i>
+                                      Choose File
+                                    </button>
+                                  </div>
+                            </div>
+                            <div class="field">
+                                <label>ِAttach a photo of yourself holding the GCC ID</label>
+                                <div class="ui action input">
+                                    <input type="text" value="" placeholder="No File Chosen">
+                                    <button class="ui green left labeled icon button">
+                                      <i class="file icon"></i>
+                                      Choose File
+                                    </button>
                                   </div>
                             </div>
                             <br />
@@ -166,19 +148,18 @@
                         <br />
                         <br />
                         <span class="ui medium text">
-                            You find your 10-digit National ID number on your National ID card.
+                            You find your GCC National ID number on your national ID card.
                         </span>
                         <br />
                         <br />
-                        <div class="ui yellow compact message">
-                            <div class="header">
-                              IMPORTANT
-                            </div>
-                            <p>
-                                Once you press next, you will receive an OTP (one time password) on the mobile phone number that is linked to your personal ID in Absher.
-                            </p>
-                          </div>
+                        <span class="ui medium text">
+                            Attach a clear copy of the front page of your personal ID card.
+                        </span>
                         <br />
+                        <br />
+                        <span class="ui medium text">
+                            Make sure both your face and ID card are clear on the photo — nothing of the ID card can be covered or censored.
+                        </span>
                     </div>
                 </div>
 
@@ -186,36 +167,14 @@
         </div>
       </div>
     </section>
-    <div class="ui mini modal">
-        <i class="close icon"></i>
-        <div class="content">
-          <div class="description">
-            <p>
-                Please insert the six-digit OTP (one time password) you received on your mobile number that has been registered in Absher
-            </p>
-            <div class="ui input fluid focus">
-                <input type="text" placeholder="OTP example: 893621">
-            </div>
-          </div>
-        </div>
-        <div class="actions">
-          <div id="ok" class="ui button">
-            OK
-          </div>
-        </div>
-      </div>
     <script>
         $(document).ready(function(){
             $('#next').click(function() {
-                $('.ui.modal').modal('show');
+                window.location.href = "/register-three.html";
             })
 
             $('#previous').click(function() {
                 window.location.href = "/register-two-own.html";
-            })
-
-            $('#ok').click(function() {
-                window.location.href = "/register-three.html";
             })
         });
     </script>
