@@ -132,3 +132,12 @@ body {
 /* .progressbar li.active + li:after {
     background-color: #41ad4f;
 } */
+
+
+label {
+  font-weight: normal !important;
+}
+
+div.ui.breadcrumb {
+  display: none;
+}
