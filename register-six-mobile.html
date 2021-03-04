@@ -149,7 +149,9 @@
                   </div>
                   <div class="fields">
                     <div class="field">
-                      <label>Did not receive code: 60 seconds</label>
+                      <label
+                        >Did not receive code: <span id="timer"></span
+                      ></label>
                       <button class="ui green button" type="button">
                         Resend Code
                       </button>
@@ -200,6 +202,22 @@
         $("#previous").click(function () {
           window.location.href = "/register-six.html";
         });
+
+        var count = 60;
+        var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+
+        function timer() {
+          count = count - 1;
+          if (count <= 10 && count >= 1) {
+            $("#timer").addClass("ui text red");
+          }
+
+          if (count <= 0) {
+            clearInterval(counter);
+            return;
+          }
+          document.getElementById("timer").innerHTML = count + " seconds"; // watch for spelling
+        }
       });
     </script>
 
