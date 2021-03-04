@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIDF</title>
     <script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
     <script src="/dist/semantic.min.js"></script>
     <style>
-        div.active.step {
-            background-color: #41ad4f !important;
-        }
-        div.active.step div.description {
-            color: white !important;
-        }
-        div.active.step::after {
-            background-color: #41ad4f !important
-        }
+      div.active.step {
+        background-color: #41ad4f !important;
+      }
+      div.active.step div.description {
+        color: white !important;
+      }
+      div.active.step::after {
+        background-color: #41ad4f !important;
+      }
 
-        div.completed.step {
-            background-color: #efefef !important;
-        }
-        div.completed.step::after {
-            background-color: #efefef !important
-        }
+      div.completed.step {
+        background-color: #efefef !important;
+      }
+      div.completed.step::after {
+        background-color: #efefef !important;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <div class="ui stackable menu">
-          <div class="item">
-            <a href="index.html">
-             <img class="ui tiny image" src="/assets/logo.svg">
-            </a>
-          </div>
-          <div class="right menu">
-            <a class="item">العربیة</a>
-            <a class="item">Contact Us</a>
-            <a class="item">
-              <button class="ui green button">Sign In</button>
-            </a>
-          </div>
+        <div class="item">
+          <a href="index.html">
+            <img class="ui tiny image" src="/assets/logo.svg" />
+          </a>
+        </div>
+        <div class="right menu">
+          <a class="item">العربیة</a>
+          <a class="item">Contact Us</a>
+          <a class="item">
+            <button class="ui green button">Sign In</button>
+          </a>
+        </div>
       </div>
     </header>
     <section class="page-content">
       <div class="ui hidden divider"></div>
       <div class="ui container basic segment">
         <div class="ui grid">
-            <div class="two wide column">
-
-                <div class="ui card">
-                    <div class="content">
-                        <div class="center aligned header">
-                            <i class="clipboard check huge icon green"></i>
-                        </div>
-                        <div class="center aligned description">
-                            <span class="ui medium green text">Provide Registration <br/> details</span>
-                        </div>
-                    </div>
+          <div class="two wide column">
+            <div class="ui card">
+              <div class="content">
+                <div class="center aligned header">
+                  <i class="clipboard check huge icon green"></i>
                 </div>
-                
+                <div class="center aligned description">
+                  <span class="ui medium green text"
+                    >Provide Registration <br />
+                    details</span
+                  >
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="fourteen wide column" >
-                <div class="pg-container">
-                    <ul class="progressbar">
-                        <li class="completed">Company Identification</li>
-                        <li class="active">User Identification</li>
-                        <li class="">Personal Data</li>
-                        <li class="">Address</li>
-                        <li class="">Contact</li>
-                        <li>Verification</li>
-                        <li>Password</li>
-                    </ul>
-                  </div>
-                <!-- <div class="ui unstackable steps">
+          <div class="fourteen wide column">
+            <div class="pg-container">
+              <ul class="progressbar">
+                <li class="completed">Company Identification</li>
+                <li class="active">User Identification</li>
+                <li class="">Personal Data</li>
+                <li class="">Address</li>
+                <li class="">Contact</li>
+                <li>Verification</li>
+                <li>Password</li>
+              </ul>
+            </div>
+            <!-- <div class="ui unstackable steps">
                     <div class="completed step">
                         <div class="description">Company Identification</div>
                     </div>
@@ -115,103 +117,133 @@
                     </div>
                 </div> -->
 
-                <div class="ui hidden divider"></div>
-                    <div class="ui breadcrumb">
-                        <a class="section" href="register-two-agent.html">Appointed Agent</a>
-                        <div class="divider"> - </div>
-                        <div class="active section">GCC National ID</div>
-                    </div>
-                <!-- <span class="ui green large text">Please provide your official identification details</span> -->
-                <div class="ui divider"></div>
-                
-                <div class="ui grid">
-                    <div class="eight wide column">
-                        <form class="ui form">
-                            <div class="ten wide field">
-                              <label>Enter your GCC National ID</label>
-                              <div class="wide field">
-                                <input type="text" name="cr-number" placeholder="Eg. 9790140130">
-                              </div>
-                            </div>
-                            <div class="field">
-                                <label>ِAttach a copy of your GCC ID</label>
-                                <div class="ui action input">
-                                    <input type="text" value="" placeholder="No File Chosen">
-                                    <button class="ui green left labeled icon button">
-                                      <i class="file icon"></i>
-                                      Choose File
-                                    </button>
-                                  </div>
-                            </div>
-                            <div class="field">
-                                <label>ِAttach a photo of yourself holding the GCC ID</label>
-                                <div class="ui action input">
-                                    <input type="text" value="" placeholder="No File Chosen">
-                                    <button class="ui green left labeled icon button">
-                                      <i class="file icon"></i>
-                                      Choose File
-                                    </button>
-                                  </div>
-                            </div>
-                            <div class="field">
-                                <label>ِAttach your letter of authority</label>
-                                <div class="ui action input">
-                                    <input type="text" value="" placeholder="No File Chosen">
-                                    <button class="ui green left labeled icon button">
-                                      <i class="file icon"></i>
-                                      Choose File
-                                    </button>
-                                  </div>
-                            </div>
-                            <br />
-                            <button id="previous" class="ui green button basic" type="button">Previous</button>
-                            <button id="next" class="ui green button" type="button">Next</button>
-                          </form>
-                    </div>
-                    <div class="eight wide column">
-                        <br />
-                        <br />
-                        <span class="ui medium text">
-                            You find your GCC National ID number on your national ID card.
-                        </span>
-                        <br />
-                        <br />
-                        <br />
-                        <span class="ui medium text">
-                            Attach a clear copy of the front page of your personal ID card.
-                        </span>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <span class="ui medium text">
-                            Make sure both your face and ID card are clear on the photo — nothing of the ID card can be covered or censored.
-                        </span>
-                        <br />
-                        <br />
-                        <br />
-                        <span class="ui medium text">
-                            Attach a letter of authority signed and stamped by the company owner / shareholder.
-                        </span>
-                        <br />
-                        <br />
-                    </div>
-                </div>
-
+            <div class="ui hidden divider"></div>
+            <div class="ui breadcrumb">
+              <a class="section" href="register-two-agent.html"
+                >Appointed Agent</a
+              >
+              <div class="divider">-</div>
+              <div class="active section">GCC National ID</div>
             </div>
+            <!-- <span class="ui green large text">Please provide your official identification details</span> -->
+            <div class="ui divider"></div>
+
+            <div class="ui grid">
+              <div class="eight wide column">
+                <form class="ui form">
+                  <div class="ten wide field">
+                    <label>Enter your GCC National ID</label>
+                    <div class="wide field">
+                      <input
+                        type="text"
+                        name="cr-number"
+                        placeholder="Eg. 9790140130"
+                      />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>ِAttach a copy of your GCC ID</label>
+                    <div class="ui action input">
+                      <input
+                        type="text"
+                        value=""
+                        placeholder="No File Chosen"
+                      />
+                      <button class="ui green left labeled icon button">
+                        <i class="file icon"></i>
+                        Choose File
+                      </button>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label
+                      >ِAttach a photo of yourself holding the GCC ID</label
+                    >
+                    <div class="ui action input">
+                      <input
+                        type="text"
+                        value=""
+                        placeholder="No File Chosen"
+                      />
+                      <button class="ui green left labeled icon button">
+                        <i class="file icon"></i>
+                        Choose File
+                      </button>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>ِAttach your letter of authority</label>
+                    <div class="ui action input">
+                      <input
+                        type="text"
+                        value=""
+                        placeholder="No File Chosen"
+                      />
+                      <button class="ui green left labeled icon button">
+                        <i class="file icon"></i>
+                        Choose File
+                      </button>
+                    </div>
+                  </div>
+                  <br />
+                  <button
+                    id="previous"
+                    class="ui green button basic"
+                    type="button"
+                  >
+                    Previous
+                  </button>
+                  <button id="next" class="ui green button" type="button">
+                    Next
+                  </button>
+                </form>
+              </div>
+              <div class="eight wide column">
+                <br />
+                <br />
+                <span class="ui medium text">
+                  You find your GCC National ID number on your national ID card.
+                </span>
+                <br />
+                <br />
+                <br />
+                <span class="ui medium text">
+                  Attach a clear copy of the front page of your personal ID
+                  card.
+                </span>
+                <br />
+                <br />
+                <br />
+                <br />
+                <span class="ui medium text">
+                  Make sure both your face and ID card are clear on the photo —
+                  nothing of the ID card can be covered or censored.
+                </span>
+                <br />
+                <br />
+                <br />
+                <span class="ui medium text">
+                  Attach a letter of authority signed and stamped by the company
+                  owner / shareholder.
+                </span>
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <script>
-        $(document).ready(function(){
-            $('#next').click(function() {
-                window.location.href = "/register-three.html";
-            })
-
-            $('#previous').click(function() {
-                window.location.href = "/register-two-agent.html";
-            })
+      $(document).ready(function () {
+        $("#next").click(function () {
+          window.location.href = "/register-three.html";
         });
+
+        $("#previous").click(function () {
+          window.location.href = "/register-two-agent.html";
+        });
+      });
     </script>
 
     <!-- <footer>
@@ -219,5 +251,5 @@
         Footer
       </div>
     </footer> -->
-</body>
+  </body>
 </html>
