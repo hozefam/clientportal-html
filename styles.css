@@ -9,6 +9,14 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .long-content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
   
   .bg-image {
     background-image: url("/assets/bg.png");
@@ -18,6 +26,14 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+  }
+
+  span.ui.large.text {
+    line-height: 1.5;
+  }
+
+  td.left.marked {
+    line-height: 1.5;
   }
   
   input[readonly] {
@@ -63,7 +79,7 @@ body {
     width: 14%;
     float: left;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: normal;
     position: relative;
     text-align: center;
     /* text-transform: uppercase; */
@@ -98,14 +114,21 @@ body {
 .progressbar li.active {
     color: #41ad4f;
 }
+.progressbar li.completed::after {
+  background-color: #41ad4f;
+}
+.progressbar li.active:after {
+  background-color: #41ad4f;
+}
 .progressbar li.completed::before {
   background-color: white;
+  border-color: #41ad4f;
 }
 .progressbar li.active:before {
     background-color: #41ad4f;
     color: white;
     border-color: #41ad4f;
 }
-.progressbar li.active + li:after {
+/* .progressbar li.active + li:after {
     background-color: #41ad4f;
-}
+} */
