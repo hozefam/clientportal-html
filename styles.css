@@ -15,12 +15,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .bg-image {
   background-image: url("/assets/bg.png");
   background-color: white;
-  height: 100px;
+  height: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.bg-image-long {
+  background-image: url("/assets/background-large.png");
+  background-color: white;
+  height: calc(100vh);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
