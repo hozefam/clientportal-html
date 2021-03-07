@@ -8,7 +8,7 @@
 .pg-ctnr {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
     justify-content:space-evenly;
     flex-wrap: nowrap;
     align-items: center;
@@ -63,6 +63,7 @@
 .circular.ui.gray.icon.button.completed {
     border-color: green;
     border-width: 2px;
+    background-color: white;
 }
 
 .pg-step.completed::after {
