@@ -19,7 +19,6 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .bg-image {
@@ -35,7 +34,7 @@ label {
 .bg-image-long {
   background-image: url("/assets/background-large.png");
   background-color: white;
-  height: calc(100vh);
+  height: calc(120vh);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
