@@ -109,6 +109,7 @@ div.ui.yellow.compact.message div.header {
   margin: 0 auto 10px auto;
   border-radius: 50%;
   background-color: lightgray;
+  font-size: larger;
 }
 .progressbar li:after {
   width: 100%;
