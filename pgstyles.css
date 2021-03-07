@@ -1,0 +1,74 @@
+.ctnr {
+    text-align: center;
+    margin: 0;
+    width: 800px;
+    position: relative;
+}
+
+.pg-ctnr {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    min-width: 800px;
+}
+
+.pg-step {
+    position: relative;
+}
+
+.pg-step::after {
+    width: 100%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 40px;
+    z-index: -1;
+}
+
+.pg-step::before {
+    width: 100%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 40px;
+    left: -50%;
+    z-index: -1;
+}
+
+.pg-step:last-child:after {
+    content: "";
+    background-color: white;
+    /* opacity: 0; */
+}
+
+
+.pg-step:first-child::before {
+    content: "";
+    background-color: white;
+    /* opacity: 0; */
+}
+
+.center.aligned.description {
+    margin-top: 10px;
+    font-weight: 300;
+    color: gray;
+}
+
+.circular.ui.gray.icon.button.completed {
+    border-color: green;
+    border-width: 2px;
+}
+
+.pg-step.completed::after {
+    background-color: green;
+}
+
+.pg-step.active::before {
+    background-color: green;
+}

@@ -12,6 +12,7 @@
     ></script>
     <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css" />
     <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/pgstyles.css" />
     <script src="/dist/semantic.min.js"></script>
     <style>
       div.active.step {
@@ -57,7 +58,48 @@
             loan eligiblity information.
           </span>
           <div class="ui hidden divider"></div>
-          <div class="ui steps">
+
+          <div class="ctnr">
+            <div class="pg-ctnr">
+                <!-- <div class="pg" id="pg"></div> -->
+                <div class="pg-step completed">
+                  <button class="circular ui gray icon button completed" style="padding: 15px; ">
+                    <i class="clipboard check huge icon green "></i>
+                  </button>
+                  <div class="center aligned description">
+                    <span class="ui medium gray text"
+                      >Provide Registration <br />
+                      details</span
+                    >
+                  </div>
+                </div>
+                <div class="pg-step active">
+                  <button class="circular ui gray icon button" style="padding: 15px; background-color: #41ad4f;">
+                    <i class="tasks huge icon white"></i>
+                  </button>
+                  <div class="center aligned description">
+                    <span class="ui medium green text"
+                      >Provide general loan <br />
+                      eligibility information</span
+                    >
+                  </div>
+                </div>
+                <div class="pg-step">
+                  <button class="circular ui gray icon button" style="padding: 15px">
+                    <i class="file alternate outline huge icon white"></i>
+                  </button>
+                  <div class="center aligned description">
+                    <span class="ui medium gray text"
+                      >Provide detailed loan <br />
+                      application information</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          <!-- <div class="ui steps">
             <div class="completed step">
               <i class="clipboard check icon"></i>
               <div class="content">
@@ -85,7 +127,7 @@
                 >
               </div>
             </div>
-          </div>
+          </div> -->
           <br />
 
           <div class="ui hidden divider"></div>
