@@ -173,3 +173,8 @@ div.ui.breadcrumb {
 .circular {
   box-shadow: -2px 2px 5px 0px rgb(171 166 171) !important;
 }
+
+
+.center.aligned.description {
+  transform: translateX(-5px);
+}
