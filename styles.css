@@ -191,6 +191,6 @@ div.ui.breadcrumb {
   justify-content: space-between;
 }
 
-i.dropdown.icon {
+i.dropdown.icon.green {
   transform: scaleX(-1) !important;
 }
