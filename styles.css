@@ -183,4 +183,14 @@ div.ui.breadcrumb {
 
 .ui.accordion.segment {
   border-color: green !important;
+  width: 750px;
+}
+
+#acctitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+i.dropdown.icon {
+  transform: scaleX(-1) !important;
 }
