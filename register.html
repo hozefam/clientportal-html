@@ -128,42 +128,55 @@
             >Please prepare the following information before you register</span
           >
           <div class="ui hidden divider"></div>
-          <table class="ui celled table">
-            <tbody>
-              <tr>
-                <td class="left marked green">1</td>
-                <td class="left marked">
-                  The commercial registration number or SAGIA industrial license
-                  number of the company for which <br />
-                  you are applying a loan.
-                </td>
-              </tr>
-              <tr>
-                <td class="left marked green">2</td>
-                <td class="left marked">
-                  Your Personal identification information e.g. National ID,
-                  Resident ID. or scans of copies of your <br />
-                  GCC ID, or passport.
-                </td>
-              </tr>
-              <tr>
-                <td class="left marked green">3</td>
-                <td class="left marked">
-                  In case you are an employee representing your company, please
-                  prepare a delegation of authority letter <br />
-                  signed and stamped by the company owner / shareholder.
-                </td>
-              </tr>
-              <tr>
-                <td class="left marked green">4</td>
-                <td class="left marked">
-                  In case you are an agent representing a company, please
-                  prepare a delegation of authority letter signed <br />
-                  and stamped by the company owner / shareholder.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+
+          <div class="ui accordion" data-read-aloud-multi-block="true">
+            <div class="title" data-speechify-sentence="">
+              <i class="dropdown icon"></i>
+              Check here the documents you need to register.
+            </div>
+            <div class="content active" data-read-aloud-multi-block="true">
+              
+              <table class="ui celled table">
+                <tbody>
+                  <tr>
+                    <td class="left marked green">1</td>
+                    <td class="left marked">
+                      The commercial registration number or SAGIA industrial license
+                      number of the company for which <br />
+                      you are applying a loan.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left marked green">2</td>
+                    <td class="left marked">
+                      Your Personal identification information e.g. National ID,
+                      Resident ID. or scans of copies of your <br />
+                      GCC ID, or passport.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left marked green">3</td>
+                    <td class="left marked">
+                      In case you are an employee representing your company, please
+                      prepare a delegation of authority letter <br />
+                      signed and stamped by the company owner / shareholder.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left marked green">4</td>
+                    <td class="left marked">
+                      In case you are an agent representing a company, please
+                      prepare a delegation of authority letter signed <br />
+                      and stamped by the company owner / shareholder.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+            </div>
+          </div>
+          
 
           <div class="ui hidden divider"></div>
           <button
@@ -181,5 +194,10 @@
         Footer
       </div>
     </footer> -->
+    <script>
+       $(document).ready(function () {
+        $('.ui.accordion').accordion();
+      });
+    </script>
   </body>
 </html>
