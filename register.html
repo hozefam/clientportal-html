@@ -27,7 +27,7 @@
     </style>
   </head>
   <body class="bg-image-long">
-    <header style="margin-bottom: 70px;">
+    <header>
       <div class="ui stackable menu">
         <div class="item">
           <a href="index.html">
@@ -54,6 +54,8 @@
             Your journey to apply for a Project Finance Loan begins here.</span
           >
           <div class="ui hidden divider"></div>
+          <br/>
+            <br/>
           <div class="ctnr">
             <div class="pg-ctnr">
                 <!-- <div class="pg" id="pg"></div> -->
@@ -92,7 +94,9 @@
                 </div>
               </div>
             </div>
-
+            <br/>
+            <br/>
+            
           <!-- <div class="ui steps">
             <div class="active step">
               <i class="clipboard check icon"></i>
@@ -124,12 +128,12 @@
           </div> -->
           <br />
           <div class="ui hidden divider"></div>
-          <span class="ui medium text"
+          <!-- <span class="ui medium text"
             >Please prepare the following information before you register</span
           >
-          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div> -->
 
-          <div class="ui accordion" data-read-aloud-multi-block="true">
+          <div id="accordion" class="ui accordion segment" data-read-aloud-multi-block="true">
             <div class="title" data-speechify-sentence="">
               <i class="dropdown icon"></i>
               Check here the documents you need to register.
@@ -196,7 +200,7 @@
     </footer> -->
     <script>
        $(document).ready(function () {
-        $('.ui.accordion').accordion();
+        $('#accordion').accordion();
       });
     </script>
   </body>
